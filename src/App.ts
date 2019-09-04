@@ -18,7 +18,6 @@ class App {
     this.app = express();
 
     new order(this.app);
-
   }
 }
 
