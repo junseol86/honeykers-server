@@ -1,3 +1,4 @@
 FROM node
 ADD ./dist/ /
-CMD node bundle.js
+RUN npm run-script build && \
+  node bundle.js
