@@ -1,4 +1,5 @@
 FROM node
 ADD ./ /
-RUN npm run-script build && \
+RUN npm install && \
+  npm run-script build && \
   node dist/bundle.js
