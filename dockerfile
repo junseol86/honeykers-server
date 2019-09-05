@@ -1,5 +1,6 @@
 FROM node
 ADD ./ /
 RUN npm install && \
-  npm run-script build && \
-  node dist/bundle.js
+  npm run-script build
+EXPOSE 3000
+CMD node dist/bundle.js
