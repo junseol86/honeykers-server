@@ -10,7 +10,7 @@ class Order {
 
   setRoutes () {
     this.app.get("/", (req: express.Request, res: express.Response, next: express.NextFunction) => {
-      res.send("Hello Mello Bello Dello world");
+      res.send("Hello 안녕하세용 world");
     });
   }
 
