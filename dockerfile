@@ -1,4 +1,4 @@
-FROM node
+FROM node:8.16.1-alpine
 ADD ./ /
 RUN npm install && \
   npm run-script build
