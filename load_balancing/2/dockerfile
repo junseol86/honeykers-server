@@ -1,5 +1,5 @@
 FROM node:8.16.1-alpine
-ADD ./ /
+ADD ../../ /
 RUN npm install && \
   npm run-script build
 EXPOSE 3001
