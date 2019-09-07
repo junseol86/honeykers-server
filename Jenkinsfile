@@ -10,7 +10,7 @@ pipeline {
         sh 'docker run -d --name honeykers_con_01 -p 3000:3000 honeykers_img:01'
       }
     }
-    stage('Run Docker container 01') {
+    stage('Run Docker container 02') {
       steps {
         sh 'docker stop honeykers_con_02 || true'
         sh 'docker rm -f honeykers_con_02 || true'
