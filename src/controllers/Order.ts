@@ -13,7 +13,6 @@ class Order {
       res.send("Hello 메시지가 바뀌었엉" + new Date());
     });
   }
-
 }
 
 export default Order;
