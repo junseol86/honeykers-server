@@ -16,7 +16,7 @@ pipeline {
         sh 'docker rm -f honeykers_con_02 || true'
         sh 'docker image prune -a -f'
         sh 'docker build -t honeykers_img:02 .'
-        sh 'docker run -d --name honeykers_con_02 -p 3000:3000 honeykers_img:02'
+        sh 'docker run -d --name honeykers_con_02 -p 3001:3000 honeykers_img:02'
       }
     }
   }
