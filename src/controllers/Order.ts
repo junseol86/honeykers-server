@@ -8,10 +8,10 @@ class Order {
     this.setRoutes();
   }
 
-  
+
   setRoutes () {
     this.app.get("/", (req: express.Request, res: express.Response, next: express.NextFunction) => {
-      res.send("Hello 메시지가 바뀌었엉" + new Date());
+      res.send("여기까지만 되면 원이 없겠음" + new Date());
     });
   }
 }
