@@ -20,7 +20,7 @@ class Order {
 
 async function getMachineId(res: express.Response) {
   let id = await machineId();
-  res.send(`기기번호: ${id}  ${new Date()}`);
+  res.send(`기기번호: ${id}\n현재시간: ${new Date()}`);
 }
 
 export default Order;
