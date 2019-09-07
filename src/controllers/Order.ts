@@ -1,4 +1,5 @@
 import express from "express";
+import {machineId, machineIdSync} from 'node-machine-id';
 
 class Order {
   public app: express.Application
@@ -11,9 +12,15 @@ class Order {
 
   setRoutes () {
     this.app.get("/", (req: express.Request, res: express.Response, next: express.NextFunction) => {
-      res.send("이것까지 되면 레알 감동" + new Date());
+      getMachineId(res);
     });
   }
+  
+}
+
+async function getMachineId(res: express.Response) {
+  let id = await machineId();
+  res.send(`기기번호: ${id}  ${new Date()}`);
 }
 
 export default Order;
