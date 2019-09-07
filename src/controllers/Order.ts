@@ -11,7 +11,7 @@ class Order {
 
   setRoutes () {
     this.app.get("/", (req: express.Request, res: express.Response, next: express.NextFunction) => {
-      res.send("여기까지만 되면 원이 없겠음" + new Date());
+      res.send("두개 컨테이너 돌리기 한번 더 확인!" + new Date());
     });
   }
 }
